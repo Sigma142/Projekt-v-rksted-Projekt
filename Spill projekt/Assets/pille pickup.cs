@@ -27,6 +27,10 @@ public class pillepickup : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                 }
             }
+            else
+            {
+                text.text = "";
+            }
         }
         else
         {
