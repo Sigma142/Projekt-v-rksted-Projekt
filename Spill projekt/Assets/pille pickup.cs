@@ -13,7 +13,7 @@ public class pillepickup : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, lunge, mask))
@@ -27,10 +27,10 @@ public class pillepickup : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                 }
             }
-            else
-            {
-                text.text = "";
-            }
+        }
+        else
+        {
+            text.text = "";
         }
     }
 }
