@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,12 +95,210 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 3381
+        y: 171
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd300dd1bd80de941bfa25b22fc9a9e1
+      internalID: 399537085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 171
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbda6fe118464ba4f9d9deeb5c434a43
+      internalID: -517196805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 169
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0f45ab46971af41b38fd23a9eca4a3
+      internalID: -543982087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 171
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d140faa02ad834b9ed561f22b8e8ae
+      internalID: -1644437643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 172
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fcc04dff1d7b04593d8eb538efabdb
+      internalID: -1504344559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 172
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70af756ac0e62e24393e446b46670e7a
+      internalID: 1156510460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 171
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3452c486328904587f0811704cb8b4
+      internalID: 2089014325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 169
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca5bdc11d5cf0046a6285d41ab7ea73
+      internalID: 152710755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sanity-bar-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2966
+        y: 171
+        width: 228
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebeab32a5604de43978384fb15a17a9
+      internalID: 168944665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d68bf5d9a091312498dca352feccce64
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +306,93 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
+    nameFileIdTable:
+      sanity-bar-Sheet_0: 399537085
+      sanity-bar-Sheet_1: -517196805
+      sanity-bar-Sheet_10: 197708349
+      sanity-bar-Sheet_11: -863829208
+      sanity-bar-Sheet_12: -743864752
+      sanity-bar-Sheet_13: 276887061
+      sanity-bar-Sheet_14: 2118780759
+      sanity-bar-Sheet_15: 1173065909
+      sanity-bar-Sheet_16: 2084970307
+      sanity-bar-Sheet_17: -1693909907
+      sanity-bar-Sheet_18: 1739080194
+      sanity-bar-Sheet_19: 1115479609
+      sanity-bar-Sheet_2: -543982087
+      sanity-bar-Sheet_20: -1017011203
+      sanity-bar-Sheet_21: 1097089800
+      sanity-bar-Sheet_22: 1590409829
+      sanity-bar-Sheet_23: -2113171686
+      sanity-bar-Sheet_24: -1639346469
+      sanity-bar-Sheet_25: 1758014220
+      sanity-bar-Sheet_26: -1800059308
+      sanity-bar-Sheet_27: -253361257
+      sanity-bar-Sheet_28: 71216025
+      sanity-bar-Sheet_29: 683503828
+      sanity-bar-Sheet_3: -1644437643
+      sanity-bar-Sheet_30: -1978126022
+      sanity-bar-Sheet_31: -202142582
+      sanity-bar-Sheet_32: 1616407589
+      sanity-bar-Sheet_33: -2035065859
+      sanity-bar-Sheet_34: -975263105
+      sanity-bar-Sheet_35: 1750353161
+      sanity-bar-Sheet_36: 851221541
+      sanity-bar-Sheet_37: 299798850
+      sanity-bar-Sheet_38: 510673032
+      sanity-bar-Sheet_39: 437958812
+      sanity-bar-Sheet_4: -1504344559
+      sanity-bar-Sheet_40: 1613371651
+      sanity-bar-Sheet_41: -1567713867
+      sanity-bar-Sheet_42: 1092212166
+      sanity-bar-Sheet_43: 367138752
+      sanity-bar-Sheet_44: -1220681057
+      sanity-bar-Sheet_45: 1944664915
+      sanity-bar-Sheet_46: 605265406
+      sanity-bar-Sheet_47: 202301376
+      sanity-bar-Sheet_48: 751381329
+      sanity-bar-Sheet_49: -105958423
+      sanity-bar-Sheet_5: 1156510460
+      sanity-bar-Sheet_50: 870472263
+      sanity-bar-Sheet_51: -1098838934
+      sanity-bar-Sheet_52: 532189020
+      sanity-bar-Sheet_53: 174872881
+      sanity-bar-Sheet_54: 2095308622
+      sanity-bar-Sheet_55: 2018642422
+      sanity-bar-Sheet_56: -236992509
+      sanity-bar-Sheet_57: -697869215
+      sanity-bar-Sheet_58: 69999428
+      sanity-bar-Sheet_59: -1492797289
+      sanity-bar-Sheet_6: 2089014325
+      sanity-bar-Sheet_60: 1983096754
+      sanity-bar-Sheet_61: -966003857
+      sanity-bar-Sheet_62: -221247682
+      sanity-bar-Sheet_63: -332767179
+      sanity-bar-Sheet_64: -267500050
+      sanity-bar-Sheet_65: -1718261892
+      sanity-bar-Sheet_66: -55563827
+      sanity-bar-Sheet_67: 224415525
+      sanity-bar-Sheet_68: 1022101277
+      sanity-bar-Sheet_69: 1081874002
+      sanity-bar-Sheet_7: 152710755
+      sanity-bar-Sheet_70: 569561565
+      sanity-bar-Sheet_71: -127103468
+      sanity-bar-Sheet_72: -1695441062
+      sanity-bar-Sheet_73: -1486788917
+      sanity-bar-Sheet_74: -1267674786
+      sanity-bar-Sheet_75: 1471186180
+      sanity-bar-Sheet_76: -1805759896
+      sanity-bar-Sheet_77: -705561140
+      sanity-bar-Sheet_78: -1460202219
+      sanity-bar-Sheet_79: -1071921413
+      sanity-bar-Sheet_8: -551314921
+      sanity-bar-Sheet_80: 1274867744
+      sanity-bar-Sheet_9: 168944665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

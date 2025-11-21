@@ -719,7 +719,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   images:
   - {fileID: 399537085, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
-  - {fileID: 168944665, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
   - {fileID: -517196805, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
   - {fileID: -543982087, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
   - {fileID: -1644437643, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
@@ -727,6 +726,7 @@ MonoBehaviour:
   - {fileID: 1156510460, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
   - {fileID: 2089014325, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
   - {fileID: 152710755, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
+  - {fileID: -551314921, guid: 848e0f2cc846cf9479a63dfd71da9cf7, type: 3}
   comp: {fileID: 0}
 --- !u!114 &413038362
 MonoBehaviour:
