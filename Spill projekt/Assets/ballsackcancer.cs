@@ -4,41 +4,55 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ballsackcancer : MonoBehaviour
 {
-    [SerializeField] List<Sprite> images;
-    [SerializeField] Image comp;
     [NonSerialized] public int idx = 0;
-    int shake = 0;
+    float shake = 0;
     float timer = 0f;
+    float karl = 0;
+    float timer2 = 0f;
+    private Vector3 basePosition;
+    public bool isShaking = false;
+    private Vector3 originalPos;
+    float var = 0f;
+
     void Start()
     {
-        comp = GetComponent<Image>();
-        if (comp == null)
-        {
-            Debug.LogError("No Image component found on this GameObject!");
-        }
-        if (images.Count == 0)
-        {
-            Debug.LogError("No images assigned in the inspector!");
-        }
-
-
+        originalPos = transform.localPosition;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            isShaking = false;
+        }
         timer += Time.deltaTime;
         if (timer > 10)
         {
-            Debug.Log("jews");
+            Debug.Log($"{shake}");
             idx++;
-            if (idx == images.Count) idx = 0;
-            comp.sprite = images[idx];
-            shake = (1) + idx;
+            karl = (1) * idx;
+            shake = karl * 0.001f;
             timer = 0f;
+            var++;
+            Debug.Log($"{var}");
+            if (var == 5f)
+            {
+                isShaking = true;
+            }
         }
-        transform.position = new Vector2(UnityEngine.Random.Range(-shake, shake) + Screen.width * 0.8f, UnityEngine.Random.Range(-shake, shake) + Screen.height * 0.8f);
+        if (isShaking == true)
+        {
+            float offsetX = UnityEngine.Random.Range(-shake, shake);
+            float offsetY = UnityEngine.Random.Range(-shake, shake);
+
+            transform.localPosition = originalPos + new Vector3(offsetX, offsetY, 0);
+        }
+        else
+        {
+            // Return to original position when done
+            transform.localPosition = originalPos;
+        }
     }
 }
