@@ -1784,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Thisishowwemove
   gravity: -1
+  Jumpheight: 2
   moveSpeed: 5
   cameraTransform: {fileID: 330585546}
 --- !u!4 &1158053464 stripped
