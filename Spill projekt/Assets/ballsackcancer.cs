@@ -23,7 +23,7 @@ public class ballsackcancer : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.R))
         {
             isShaking = false;
         }
