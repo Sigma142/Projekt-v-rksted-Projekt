@@ -23,23 +23,37 @@ public class ballsackcancer : MonoBehaviour
 
     void Update()
     {
+        if (idx >= 10)
+        {
+            Debug.Log("Game Over");
+        }
         if (Input.GetKeyUp(KeyCode.R))
         {
-            isShaking = false;
+            if (gamma_radioaktivitet.piller >= 1)
+            {
+                gamma_radioaktivitet.piller -= 1;
+                idx -= 3;
+                var -= 3f;
+                timer = 8;
+            }
         }
         timer += Time.deltaTime;
         if (timer > 10)
         {
-            Debug.Log($"{shake}");
+            Debug.Log($"{idx}");
             idx++;
             karl = (1) * idx;
             shake = karl * 0.001f;
             timer = 0f;
             var++;
             Debug.Log($"{var}");
-            if (var == 5f)
+            if (var >= 5f)
             {
                 isShaking = true;
+            }
+            else
+            {
+                isShaking = false;
             }
         }
         if (isShaking == true)
