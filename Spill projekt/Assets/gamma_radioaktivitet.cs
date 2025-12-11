@@ -16,4 +16,5 @@ public class gamma_radioaktivitet : MonoBehaviour
     {
         text.text = "Gamma piller: " + piller;
     }
+
 }
