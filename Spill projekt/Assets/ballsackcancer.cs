@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ballsackcancer : MonoBehaviour
 {
+    public static ballsackcancer instance;
     [NonSerialized] public int idx = 0;
     float shake = 0;
     float timer = 0f;
@@ -15,6 +17,10 @@ public class ballsackcancer : MonoBehaviour
     public bool isShaking = false;
     private Vector3 originalPos;
     float var = 0f;
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
