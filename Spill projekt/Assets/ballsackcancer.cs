@@ -12,7 +12,6 @@ public class ballsackcancer : MonoBehaviour
     float shake = 0;
     float timer = 0f;
     float karl = 0;
-    float timer2 = 0f;
     private Vector3 basePosition;
     public bool isShaking = false;
     private Vector3 originalPos;
