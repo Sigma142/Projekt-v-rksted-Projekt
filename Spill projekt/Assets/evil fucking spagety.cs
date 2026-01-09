@@ -1,21 +1,67 @@
 using System.Net.NetworkInformation;
 using UnityEngine;
+using System.Collections;
 
 public class evilfuckingspagety : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float fadeDuration = 0;
+    float efn = 0;
+    float efn2 = 0;
+    private Material mat;
+    private Color baseColor;
+    private bool isVisible = false;
+
     void Start()
     {
-        GradientAlphaKey[] alphaKeys = new GradientAlphaKey[0];
+        mat = GetComponent<Renderer>().material;
+        baseColor = mat.color;
+
+        // Start invisible
+        baseColor.a = 0f;
+        mat.color = baseColor;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (ballsackcancer.instance.isShaking
- == true)
+            efn = ballsackcancer.idx;
+        efn = efn * 0.1f;
+        if (efn != efn2)
         {
-        GradientAlphaKey[] alphaKeys = new GradientAlphaKey[2];
+            StartCoroutine(FadeTo(efn));
+            efn2 = efn;
         }
+    }
+
+    IEnumerator FadeTo(float targetAlpha)
+    {
+        float startAlpha = mat.color.a;
+        float time = 0f;
+
+        while (time < fadeDuration)
+        {
+            time += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, time / fadeDuration);
+
+            Color c = mat.color;
+            c.a = alpha;
+            mat.color = c;
+
+            yield return null;
+        }
+    }
+    public Transform player;             // Your player
+    public Vector3 offset = new Vector3(4f, 1f, 0f); // Behind & above
+    public float moveSmooth = 5f;        // How fast it moves
+    public float rotateSmooth = 5f;      // How fast it rotates
+
+    void LateUpdate()
+    {
+        // --- Position ---
+        Vector3 targetPos = player.position + offset;
+        transform.position = Vector3.Lerp(transform.position, targetPos, moveSmooth * Time.deltaTime);
+
+        // --- Rotation ---
+
+        transform.rotation = Quaternion.Euler(90, -90, 90);
     }
 }

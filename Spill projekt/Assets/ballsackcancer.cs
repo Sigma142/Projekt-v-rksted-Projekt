@@ -8,14 +8,14 @@ using UnityEngine.UI;
 public class ballsackcancer : MonoBehaviour
 {
     public static ballsackcancer instance;
-    [NonSerialized] public int idx = 0;
+    public static float idx = 0;
     float shake = 0;
     float timer = 0f;
     float karl = 0;
     private Vector3 basePosition;
     public bool isShaking = false;
     private Vector3 originalPos;
-    float var = 0f;
+    public static float var = 0f;
     private void Awake()
     {
         instance = this;
