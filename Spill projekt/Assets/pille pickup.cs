@@ -27,6 +27,18 @@ public class pillepickup : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                 }
             }
+            if (hit.collider.CompareTag("Door"))
+            {
+                text.text = "Tryk E åbne dørn";
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    DoorAnimator door = hit.collider.GetComponentInParent<DoorAnimator>();
+                    if (door != null)
+                    {
+                        door.Toggle();
+                    }
+                }
+            }
             else
             {
                 text.text = "";
