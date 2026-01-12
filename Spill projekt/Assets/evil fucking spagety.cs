@@ -49,19 +49,19 @@ public class evilfuckingspagety : MonoBehaviour
             yield return null;
         }
     }
-    public Transform player;             // Your player
-    public Vector3 offset = new Vector3(4f, 1f, 0f); // Behind & above
-    public float moveSmooth = 5f;        // How fast it moves
-    public float rotateSmooth = 5f;      // How fast it rotates
+    //public Transform player;
+    //public Vector3 offset = new Vector3(4f, 1f, 0f); // Behind & above
+    //public float moveSmooth = 5f;      
+    //public float rotateSmooth = 5f;      // How fast it rotates
 
-    void LateUpdate()
-    {
-        // --- Position ---
-        Vector3 targetPos = player.position + offset;
-        transform.position = Vector3.Lerp(transform.position, targetPos, moveSmooth * Time.deltaTime);
+    //void LateUpdate()
+    //{
+    //    // --- Position ---
+    //    Vector3 targetPos = player.position + offset;
+    //    transform.position = Vector3.Lerp(transform.position, targetPos, moveSmooth * Time.deltaTime);
 
-        // --- Rotation ---
+    //    // --- Rotation ---
 
-        transform.rotation = Quaternion.Euler(90, -90, 90);
-    }
+    //    transform.rotation = Camera.main.transform.rotation;
+    //}
 }

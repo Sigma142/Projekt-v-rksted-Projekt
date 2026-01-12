@@ -7,6 +7,7 @@ public class Thisishowwemove : MonoBehaviour
     public float Jumpheight = 2f;
     public float moveSpeed = 5f;
     public Transform cameraTransform;
+    public float mouseSensitivity = 100f;
 
     private CharacterController controller;
 
@@ -33,6 +34,9 @@ public class Thisishowwemove : MonoBehaviour
         Vector3 moveDirection = forward * vertical + right * horizontal;
 
         controller.Move(moveDirection * moveSpeed * Time.deltaTime);
+
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        controller.transform.Rotate(mouseX * new Vector3(0, 1, 0));
 
         //gravity
         if (controller.isGrounded && velocity.y < 0)
